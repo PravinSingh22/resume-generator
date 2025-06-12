@@ -9,7 +9,7 @@ const port = 5000;
 
 app.use(bodyParser.json());
 app.use(cors());
-const genAI = new GoogleGenerativeAI("AIzaSyA888I4GdBTLoCAubCvGJidOQfE-5-vNFQ");
+const genAI = new GoogleGenerativeAI("");
 
 app.post("/generate-resume", async (req, res) => {
   console.log("req", req);
